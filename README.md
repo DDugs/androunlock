@@ -21,7 +21,7 @@ Since the `gesture.key` file is owned by the system user with default permission
 ## Usage
 To use the **Android Pattern Lock Decoder**, run the following command:
 ```bash
-python3 androidpatterndecode.py -g <gesture.key> -d <dictionary file>
+python3 androunlock.py -g <gesture.key> -d <dictionary file>
 ```
 This script attempts to recover the pattern lock by comparing the stored SHA-1 hash against a dictionary of precomputed hashes.
 
@@ -51,9 +51,9 @@ $ od -t x1 res/gesture.key
 ```
 
 ### 3. Decoding the Pattern
-Use the **androidpatterndecode.py** script with a hash table to retrieve the pattern:
+Use the **androunlock.py** script with a hash table to retrieve the pattern:
 ```bash
-$ python3 androidpatterndecode.py -g res/gesture.key -d res/androidpatternsha1.txt
+$ python3 androunlock.py -g res/gesture.key -d res/androidpatternsha1.txt
 [+] Pattern retrieved from gesture.key file is: 3214789
 ```
 This means the user’s unlock pattern is **3 → 2 → 1 → 4 → 7 → 8 → 9**.
