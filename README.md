@@ -1,4 +1,5 @@
 # Android Pattern Lock Decoder
+![ChatGPT Image Apr 20, 2025, 09_49_32 PM](https://github.com/user-attachments/assets/971a124c-cc25-41ec-ad99-81ce617a86a9)
 
 ## Overview
 Android's pattern lock allows users to unlock their devices by connecting at least four points on a 3x3 grid. Each point can only be used once, with a maximum of nine points. Internally, Android stores this pattern as a byte sequence, mapping each point to an index (0 to 8), where:
